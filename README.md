@@ -1,12 +1,21 @@
 # My understanding of React
 
-React.js allow me to create component and place them on the webpage. Similarly, you create the electronic devices first, such as the capacitor, the diode, the resistor and then mount them to the circuit board.
+## What is React
+As the official statement from [https://reactjs.org/](https://reactjs.org/),
 
-React have a good style of the separation of apperance and behaviour.
+> A JavaScript library for building user interfaces
 
-**A component = apperance + behaviour**
+React.js allow me to create components and place them on the webpage. Similarly, you create the electronic devices first, such as the capacitor, the diode, the resistor and then mount them to the circuit board.
 
-- Apperance is what you see on the screen, including the text, graphics, their dimension and style.
+## Why use React
+React have a good coding style of separation of apperance and behaviour when prototyping a component. It is natural.
+
+## What is a component
+A component is a functionally independant part of any system. So, if the component you create is unindependent, it is not a component at all. Therefore, you must make sure the component you design is independent.
+
+**A component = Apperance + Behaviour**
+
+- Apperance is the view, what you see on the screen, including the text, graphics, input controls, their dimension and style.
 - Behaviour is the method.
 
 For example, this example from React's homepage [https://reactjs.org/](https://reactjs.org/)
@@ -58,7 +67,7 @@ In a component, you bind the apperance and behaviour via the event, such as the 
 
 You use markup to define your apperance and JavaScript to define your behaviour, so you can have a good object-oriented thinking and coding style.
 
-## Apperance
+### Apperance
 
 The `render()` method is used to create the apperance. What created is the React DOM, not the real DOM. I think this is the so-called virtual DOM.
 
@@ -84,7 +93,7 @@ class ComponentName extends React.Component {
 
 I wonder where the `props` comes from and confused. I think I can understand it better after better understand about JavaScript and the class syntax.
 
-### Component composition
+#### Component composition
 You can compose a component with other components, like am amplifier is made up of diodes and other electronic devices.
 
 ```js
@@ -102,4 +111,4 @@ class ComponentName extends React.Component {
 
 In this example, the `ComponentName` consists of two `AnotherComponent`s.
 
-## Behaviour
+### Behaviour
